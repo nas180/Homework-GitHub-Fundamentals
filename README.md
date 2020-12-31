@@ -2,10 +2,10 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram] https://drive.google.com/file/d/1lXfPE6NXrEzFrORNa-sRgOSNvZ684oa_/view?usp=sharing
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+[Link to my diagram](https://drive.google.com/file/d/1lXfPE6NXrEzFrORNa-sRgOSNvZ684oa_/view?usp=sharing)
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the elk.yml file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+  -[Playbook File](
 
 This document contains the following details:
 - Description of the Topologu
@@ -20,12 +20,12 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+Load balancing ensures that the application will be highly availabe, in addition to restricting overloaded servers to the network.
+Load balancers play a very important role in security. The off-loading function of a load balancer defends an organization against distributed denial-of-service attacks and it does this by shifting attack traffic from the corporate server to a public cloud provider. The advantage of a jump box is that it is exposed to the public internet which means that it sits infront of all the other machines that are not exposed and it controls the access to the other machines by allowing connections from specific IP address and forwarding to those machines.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
+Filebeat watches out for log information about the file system, including which file have changed and when.
+Metricbeat periodically collects metrics from the operating system and from services running on the server. It then takes the metrics and statistics that it collects and ships them to an output that you specify.
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
