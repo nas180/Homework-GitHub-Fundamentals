@@ -30,12 +30,13 @@ Metricbeat periodically collects metrics from the operating system and from serv
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+|    Name   |  Function | IP Adress | Operating System     |
+|:---------:|:---------:|-----------|----------------------|
+| Jump-Box  |  Gateway  | 10.0.0.4  | Linux (ubuntu 18.04) |
+| Elk-Stack | Container | 10.1.0.4  | Linux (ubuntu 18.04) |
+| Web-1     | Container | 10.0.0.5  | Linux (ubuntu 18.04) |
+| Web-2     | Container | 10.0.0.6  | Linux (ubuntu 18.04) |
+| Web-3     | Container | 10.0.0.7  | Linux (ubuntu 18.04) |
 
 ### Access Policies
 
