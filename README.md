@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![Link to my diagram](https://drive.google.com/file/d/1lXfPE6NXrEzFrORNa-sRgOSNvZ684oa_/view?usp=sharing)
+![Link to my diagram](https://drive.google.com/file/d/1k8KiUaSl-MpIzyDCtV5CmrCgXdprGxSw/view?usp=sharing)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the elk.yml file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -46,8 +46,8 @@ The machines on the internal network are not exposed to the public Internet.
 Only the Jump-Box-Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 107.196.173.84
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by ssh(ing) in using ssh private key.
+I was able to access my Elk-Stack VM through my Jump-Box-Provisioner VM: 52.188.121.3.
 
 A summary of the access policies in place can be found in the table below.
 
@@ -62,8 +62,7 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
-
+It automates cloud provisioning, configuration management, application deployment, intra-service orchestration, etc. allowing for a user to not have to configure the virtual machine everytime they go in and access it.
 The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 - ...
