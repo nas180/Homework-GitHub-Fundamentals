@@ -28,7 +28,6 @@ Filebeat watches out for log information about the file system, including which 
 Metricbeat periodically collects metrics from the operating system and from services running on the server. It then takes the metrics and statistics that it collects and ships them to an output that you specify.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 |    Name   |  Function | IP Adress | Operating System     |
 |:---------:|:---------:|-----------|----------------------|
