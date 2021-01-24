@@ -62,10 +62,12 @@ A summary of the access policies in place can be found in the table below.
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 It automates cloud provisioning, configuration management, application deployment, intra-service orchestration, etc. allowing for a user to not have to configure the virtual machine everytime they go in and access it.
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
-
+- First you want to configure the Elk VM with Docker, to do this you need to:
+- Install docker.io, pip3, and Docker Python module. Making sure to have them all in a state of "present", so that when opening the Elk VM they will be running everytime.
+- Then you want to add sysctl module to have the VM use more memory.
+- Then finally you use docker_container module to download and launch a docker elk container. Making sure that it is in the state of "started" and the restart policy is "always" 
+  and that the published ports needing to be listed are set specifically to ports: 5601:5601 ; 9200:9200 ; 5044:5044.
+  
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 10.0.0.5, 10.0.0.6, 10.0.07
